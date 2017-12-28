@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bcfd5f1-a4f7-4b8a-95c0-8e98438437d7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/database/models/Gemeentes.php" />
-      <change beforePath="$PROJECT_DIR$/src/GemeentesServiceProvider.php" afterPath="$PROJECT_DIR$/src/GemeentesServiceProvider.php" />
-      <change beforePath="$PROJECT_DIR$/src/stubs/create_gemeente_table.stub" afterPath="$PROJECT_DIR$/src/stubs/create_gemeente_table.stub" />
-    </list>
+    <list default="true" id="8bcfd5f1-a4f7-4b8a-95c0-8e98438437d7" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
