@@ -1,6 +1,7 @@
 <?php
 
 namespace Misfits\Gemeentes\Database\Models;
+
 use Illuminate\Database\Eloquent\Model;
 
 /**
