@@ -23,6 +23,7 @@ class CreateGemeenteTable extends Migration
             $table->integer('nr'); 
             $table->integer('bus');
             $table->string('tel_number'); 
+            $table->string('fax_number');
             $table->string('email_address');
             $table->timestamps(); 
         });
