@@ -1,0 +1,34 @@
+{
+    "name": "misfits/gegevens-gemeentes-vlaanderen",
+    "description": "De informatie omtrent gemeentes in vlaanderen",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tim Joosten",
+            "email": "Tjoosten3@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "illuminate/database": "~5.5.0",
+        "illuminate/support": "~5.5.0"
+    }, 
+    "require-dev": {
+        "phpunit/phpunit" : "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Misfits\\Gemeentes\\": "src"
+        }
+    }, 
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Misfits\\Gemeentes\\GemeentesServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
