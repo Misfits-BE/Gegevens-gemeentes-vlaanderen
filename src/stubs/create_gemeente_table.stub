@@ -1,0 +1,54 @@
+<?php 
+
+use Illuminate\Support\Facades\Schema; 
+use Illuminate\Database\Schema\Blueprint; 
+use Illuminate\Database\Schema\Migration;
+
+class CreateGemeenteTable extends Migration
+{
+    /**
+     * Run the migration 
+     */
+    public function up() 
+    {
+        Schema::create('provincies', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+            $table->timestamps();
+        });
+
+        Schema::create('gemeentehuizen', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('street'); 
+            $table->integer('nr'); 
+            $table->integer('bus');
+            $table->string('tel_number'); 
+            $table->string('email_address');
+            $table->timestamps(); 
+        });
+
+        Schema::create('gemeentes', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('province_id');
+            $table->integer('gemeentehuis_id');
+            $table->integer('nis_number'); 
+            $table->integer('kbo_number'); 
+            $table->integer('postal');
+            $table->string('type'); 
+            $table->string('name'); 
+            $table->string('contact_page')->default('N/A'); 
+            $table->string('website');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations
+     */
+    public function down() 
+    {
+        Schema::dropIfExists('provincies');
+        Schema::dropIfExists('gemeentehuizen');
+        Schema::dropIfExists('gemeentes'); 
+    }
+}
