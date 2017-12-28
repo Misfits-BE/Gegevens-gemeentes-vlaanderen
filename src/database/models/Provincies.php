@@ -26,4 +26,11 @@ class Provincies extends Model
         parent::__construct($attributes);
         $this->setTable(config('gemeentes.database.tables.provincies'));
     }
+
+    /**
+     * Mass-assign velden voor de databank table.
+     * 
+     * @return void
+     */
+    protected $fillable = ['name'];
 }

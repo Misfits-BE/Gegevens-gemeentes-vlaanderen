@@ -26,4 +26,13 @@ class GemeenteHuizen extends Model
         parent::__construct($attributes); 
         $this->setTable(config('gemeentes.database.tables.gemeente-huizen'));
     }
+
+    /**
+     * Mass-assign velden voor de databank tabel. 
+     * 
+     * @return array
+     */
+    protected $fillable = [
+        'street', 'nr', 'bus', 'tel_number', 'fax_number', 'email_address',
+    ];
 }

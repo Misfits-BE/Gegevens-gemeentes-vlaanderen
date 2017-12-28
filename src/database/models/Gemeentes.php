@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  * @license   MIT
  * @copyright 2018 Tim Joosten
  *
- * @package Misfits\Gemeentes\Database\Models
+ * @package   Misfits\Gemeentes\Database\Models
  */
 class Gemeentes extends Model
 {
@@ -26,4 +26,14 @@ class Gemeentes extends Model
         parent::__construct($attributes);
         $this->setTable(config('gemeentes.database.tables.gemeente'));
     }
+
+    /**
+     * Mass-assign velden voor de databank tabel. 
+     * 
+     * @return array
+     */
+    protected $fillable = [
+        'province_id', 'gemeentehuis_id', 'nis_number', 'kbo_number', 
+        'postal', 'type', 'name', 'contact_page', 'website'
+    ];
 }
